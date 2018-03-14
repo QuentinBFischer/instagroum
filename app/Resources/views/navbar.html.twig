@@ -1,0 +1,18 @@
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="/">InsTAGroum</a>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto" id="navigation">
+        {% for item in navigation %}
+          <li class="nav-item {% if route == item.caption %} active {% endif %}">
+            <a class="nav-link" href="{{ item.href }}">{{ item.caption }}</a>
+          </li>
+        {% endfor %}
+    </ul>
+    <span class="navbar-text">
+
+        </span>
+  </div>
+</nav>
