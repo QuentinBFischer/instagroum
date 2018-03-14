@@ -13,8 +13,9 @@ class DefaultController extends Controller
         return $this->render('navbar.html.twig', array(
             'navigation' => array(
                 'home'      => array('href' => '/', 'caption' => 'Home'),
-                'test'       => array('href' => '/test', 'caption' => 'Test'),
+                'admin'       => array('href' => '/admin', 'caption' => 'Admin'),
                 'login'    => array('href' => '/login', 'caption' => 'Login'),
+                'logout'    => array('href' => '/logout', 'caption' => 'Logout'),
             ),
             'route' => $route
         ));

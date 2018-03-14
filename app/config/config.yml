@@ -12,6 +12,7 @@ framework:
     templating:
         engines: ['twig']
     #esi: ~
+    translator: { fallbacks: [ "en" ] }
     #translator: { fallbacks: ['%locale%'] }
     secret: '%secret%'
     router:
@@ -75,3 +76,7 @@ fos_user:
     from_email:
       address: "noreply@estiam.com"
       sender_name: "noreply"
+
+easy_admin:
+    entities:
+        - AppBundle\Entity\User
